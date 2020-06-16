@@ -1,0 +1,15 @@
+{
+  "name": "kubernetes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "kubectl apply -f pod.yaml",
+    "pods": "kubectl get pods",
+    "logs": "kubectl logs demo",
+    "stop": "kubectl delete -f pod.yaml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

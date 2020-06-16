@@ -1,0 +1,16 @@
+{
+  "name": "swarm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "docker swarm init",
+    "create": "docker service create --name demo alpine:3.5 ping 8.8.8.8",
+    "ps": "docker service ps demo",
+    "logs": "docker service logs demo",
+    "stop": "docker service rm demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
