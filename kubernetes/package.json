@@ -7,7 +7,11 @@
     "create": "kubectl apply -f pod.yaml",
     "pods": "kubectl get pods",
     "logs": "kubectl logs demo",
-    "stop": "kubectl delete -f pod.yaml"
+    "stop": "kubectl delete -f pod.yaml",
+    "start:bb": "kubectl apply -f bb.yaml",
+    "stop:bb": "kubectl delete -f bb.yaml",
+    "deployments": "kubectl get deployments",
+    "services": "kubectl get services"
   },
   "keywords": [],
   "author": "",
