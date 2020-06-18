@@ -8,7 +8,10 @@
     "create": "docker service create --name demo alpine:3.5 ping 8.8.8.8",
     "ps": "docker service ps demo",
     "logs": "docker service logs demo",
-    "stop": "docker service rm demo"
+    "stop": "docker service rm demo",
+    "deploy:bb": "docker stack deploy -c bb-stack.yaml demo",
+    "ls": "docker service ls",
+    "stop:bb": "docker stack rm demo"
   },
   "keywords": [],
   "author": "",
