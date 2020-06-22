@@ -1,0 +1,18 @@
+{
+  "name": "prune-unused-docker-objects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prune:dangling-images": "docker image prune",
+    "prune:all-images": "docker image prune -a",
+    "prune:container": "docker container prune",
+    "prune:volume": "docker volume prune",
+    "prune:network": "docker network prune",
+    "prune:all": "docker system prune",
+    "prune:all-with-volumes": "docker system prune --volumes"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
